@@ -6,9 +6,11 @@
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "api": "graphdoc --force"
   },
   "devDependencies": {
+    "@2fd/graphdoc": "^2.4.0",
     "docusaurus": "^1.14.4"
   },
   "dependencies": {
@@ -16,5 +18,9 @@
     "gray-matter": "^4.0.2",
     "raw-loader": "^4.0.1",
     "react-markdown": "^4.3.1"
+  },
+  "graphdoc": {
+    "endpoint": "http://demo.zenpub.commonspub.org:4009/api/graphql",
+    "output": "./static/api"
   }
 }
